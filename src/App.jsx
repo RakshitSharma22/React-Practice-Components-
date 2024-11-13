@@ -1,12 +1,16 @@
 import { useState } from 'react'
 import StarRating from './components/StarRating'
+import { Accordian } from './components/Accordian'
+import { accordionData } from './data/AccordianData'
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  
+  
 
   return (
-    <div className=' text-4xl flex items-center mt-48 justify-center '>
-     <StarRating number={5}/>
+    <div className='h-screen w-full relative'>
+      <Accordian accordionData={accordionData}/>
     </div>
   )
 }
