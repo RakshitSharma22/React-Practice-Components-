@@ -1,7 +1,9 @@
-import { useState } from 'react'
-import StarRating from './components/StarRating'
+
 import { Accordian } from './components/Accordian'
-import { accordionData } from './data/AccordianData'
+import { FAQ } from './components/FAQ'
+import { ReactOTP } from './components/ReactOTP'
+import { FAQData, accordionData } from './data/AccordianData'
+
 
 function App() {
 
@@ -10,7 +12,9 @@ function App() {
 
   return (
     <div className='h-screen w-full relative'>
-      <Accordian accordionData={accordionData}/>
+    {/* <Accordian accordionData={accordionData}/>
+    <FAQ FAQData={FAQData}/> */}
+    <ReactOTP otpLength={10}/>
     </div>
   )
 }

@@ -12,7 +12,7 @@ export const Accordian = ({accordionData}) => {
 
             {
 
-                accordionData.map((item,index)=> <AccordianItem title={item.title} index={index} content={item.content} setSelected={setSelected} selected={selected} />)
+                accordionData.map((item,index)=> <AccordianItem key={index} title={item.title} index={index} content={item.content} setSelected={setSelected} selected={selected} />)
             }
        
 
